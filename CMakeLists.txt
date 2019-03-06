@@ -21,7 +21,7 @@ if (WIN32)
   list ( APPEND EV_LIBS Ws2_32 )
 endif ()
 
-add_library ( ev ${EV_SRC} )
+add_library ( ev STATIC ${EV_SRC} )
 target_link_libraries ( ev ${EV_LIBS} )
 
 install_library ( ev )
