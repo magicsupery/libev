@@ -55,6 +55,10 @@
 # define dLOOPbase
 #endif
 
+#ifdef _WIN32
+# include <winsock2.h>
+#endif
+
 /* never accessed, will always be cast from/to ev_loop */
 struct event_base
 {
