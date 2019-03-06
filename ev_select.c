@@ -204,6 +204,7 @@ select_poll (EV_P_ ev_tstamp timeout)
           return;
         }
       #endif
+	  printf("%d\n", errno);
 
       if (errno == EBADF)
         fd_ebadf (EV_A);
